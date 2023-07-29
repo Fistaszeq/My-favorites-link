@@ -1,0 +1,68 @@
+html , body {
+    margin: 1em;
+    padding: 1em;
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: blue;
+}
+
+#pomofocus {
+    background-color: black;
+    padding: 1em;
+    border-radius: 1em;
+    transition: background-color 0.5s ease; /* Dodaj przejście na właściwość background-color */
+}
+#pomofocus:hover {
+    background-color: red;
+}
+#pomofocus a {
+    color: chartreuse;
+}
+
+#matemax {
+    background-color: black;
+    transition: background-color 0.5s ease; /* Dodaj przejście na właściwość background-color */
+    padding: 1em;
+    border-radius: 1em;
+}
+#matemax:hover {
+    background-color: brown;
+}
+
+#duolingo {
+    transition: background-color 0.5s ease;
+    border-radius: 1em;
+    padding: 1em;
+}
+#duolingo:hover {
+    background-color: greenyellow;
+    color: black;
+}
+#duolingo a {
+    color: red;
+}
+
+#chess {
+    transition: background-color 0.5s ease;
+    border-radius: 1em;
+    padding: 1em;
+}
+#chess:hover {
+    background-color: darkgreen;
+}
+#chess a {
+    color: red;
+}
+
+#chat {
+    transition: background-color 0.5s ease;
+    border-radius: 1em;
+    padding: 1em;
+}
+#chat:hover {
+    background-color: aquamarine;
+    color: black;
+}
