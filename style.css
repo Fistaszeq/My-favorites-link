@@ -4,9 +4,29 @@ html , body {
     background-color: black;
     color: white;
 }
+#signature {
+    color: #864800;
+    font-size: 13px;
+    padding: 1em;
+}
+body #signature:hover {
+    color: #FFCD53;
+}
+li:hover {
+    /* background-color: #3a2900; */
+    /* background-image: linear-gradient(to bottom right, #FFCD53, black); */
+    background-image: linear-gradient(to right, #a55800, black);
+    max-width: 40em;
+}
+
 
 a {
-    color: blue;
+    color: #FFCD53;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+}
+a:hover {
+    color:#fadd91;
 }
 
 #pomofocus {
