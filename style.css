@@ -1,9 +1,16 @@
-html , body {
+ body {
     margin: 1em;
     padding: 1em;
     background-color: black;
     color: white;
 }
+/*
+#FFCD53
+#864800
+#512900
+#27150B
+*/
+
 #signature {
     color: #864800;
     font-size: 13px;
@@ -11,6 +18,9 @@ html , body {
 }
 body #signature:hover {
     color: #FFCD53;
+}
+li {
+    transition: background-image 1s ease;
 }
 li:hover {
     /* background-color: #3a2900; */
@@ -23,36 +33,32 @@ li:hover {
 a {
     color: #FFCD53;
     text-decoration: none;
-    transition: background-color 0.5s ease;
-}
-a:hover {
-    color:#fadd91;
+    transition: color 1s ease;
 }
 
-#pomofocus {
+/* #pomofocus {
     background-color: black;
     padding: 1em;
     border-radius: 1em;
-    transition: background-color 0.5s ease; /* Dodaj przejście na właściwość background-color */
-}
+    transition: background-color 0.5s ease; }   
 #pomofocus:hover {
     background-color: red;
 }
 #pomofocus a {
     color: chartreuse;
-}
+} */
 
-#matemax {
+/* #matemax {
     background-color: black;
-    transition: background-color 0.5s ease; /* Dodaj przejście na właściwość background-color */
-    padding: 1em;
+    transition: background-color 0.5s ease;     padding: 1em;
     border-radius: 1em;
 }
 #matemax:hover {
     background-color: brown;
-}
+} */
+/* Dodaj przejście na właściwość background-color */
 
-#duolingo {
+/* #duolingo {
     transition: background-color 0.5s ease;
     border-radius: 1em;
     padding: 1em;
@@ -63,9 +69,9 @@ a:hover {
 }
 #duolingo a {
     color: red;
-}
+} */
 
-#chess {
+/* #chess {
     transition: background-color 0.5s ease;
     border-radius: 1em;
     padding: 1em;
@@ -75,9 +81,9 @@ a:hover {
 }
 #chess a {
     color: red;
-}
+} */
 
-#chat {
+/* #chat {
     transition: background-color 0.5s ease;
     border-radius: 1em;
     padding: 1em;
@@ -85,16 +91,15 @@ a:hover {
 #chat:hover {
     background-color: aquamarine;
     color: black;
-}
+} */
 
-#toggleButton , #toggleButton2, #toggleButton3, #toggleButton4, #toggleButton5 ,#toggleButton6 {
+#toggleButton ,#buttonmenu1 , #toggleButton2, #toggleButton3, #toggleButton4, #toggleButton5 ,#toggleButton6 {
     background-color: black;
     border: black;
-    color: white;
 }
 
 /* Ukryj początkowo wysuwany div */
-#slideDiv , #slideDiv2 , #slideDiv3, #slideDiv4, #slideDiv5, #slideDiv6 {
+#slideDiv ,#menu1 , #slideDiv2 , #slideDiv3, #slideDiv4, #slideDiv5, #slideDiv6 {
     display: none;
     width: 60%;
     height: auto;
@@ -103,16 +108,38 @@ a:hover {
   }
   
   /* Zastosuj przejście (transition) do płynnego animowania zmiany "max-height" */
-  #slideDiv , #slideDiv2 , #slideDiv3, #slideDiv4, #slideDiv5 , #slideDiv6 {
+  #slideDiv ,#menu1 ,  #slideDiv2 , #slideDiv3, #slideDiv4, #slideDiv5 , #slideDiv6 {
     transition: max-height 0.5s ease-out;
   }
   
   /* Pokaż wysuwany div po kliknięciu przycisku */
-  #slideDiv.active  , #slideDiv2.active  , #slideDiv3.active , #slideDiv4.active , #slideDiv5.active, #slideDiv6.active {
+  #slideDiv.active , #menu1.active , #slideDiv2.active  , #slideDiv3.active , #slideDiv4.active , #slideDiv5.active, #slideDiv6.active {
     display: block;
     max-height: 300px; /* Ustaw maksymalną wysokość, aby pokazać element */
   }
 
 div {
     padding: 1em;
+}
+
+#slideDiv5 li a {
+    color:yellow;
+    transition: color  1s ease;
+}
+#slideDiv5 li a:hover  {
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+#LightBtn {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#DarkBtn {
+    background-color: black;
+    color: white;
 }

@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My favorite Links</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="https://www.tortowy.pl/userdata/public/gfx/2faedef1f98e9704bcd27327118b65a7.jpg">
+    <link rel="shortcut icon" href="logo.jpeg">
 </head>
 </head>
-<body>
+<body id="site">
+    <button id="LightBtn" onclick="LightBtn()">Light Mode</button>
+    <button id="DarkBtn" onclick="DarkBtn()">Dark Mode</button>
     <div class="title">
         <h1>
             Witaj na mojej stronie <br>
@@ -28,26 +30,31 @@
 
     <div>
         <ul>
+                <h3>Menu /<button id="buttonmenu1">&#9660;</button></h3>
+                    <div id="menu1">
+                        <blockquote>"SAJANIN CHICHOCZE KIEDY TO ŁASKOCZE"</blockquote>
+                    </div>
+
 
             <h3>  <button id="toggleButton">&#9660;</button> Smoff lovi jazz / for learning / sweet music / for coding / </h3>
             
                 <div id="slideDiv" onmouseover="colormaker()">
-                    <li><a target="_blank" href="https://www.youtube.com/watch?v=rw392gowFu4">Webinar™  /</a> Really good stuf music for night coding sesion.</li>
-                    <li><a target="_blank" href="https://www.youtube.com/watch?v=pYSrlygyhi4">Dozing off ... /</a> Midle stuf in my opinion but still good content for music to learn</li>
-                    <li><a target="_blank" href="https://www.youtube.com/watch?v=FhKh-lj9qtg">이 재생목록으로 쉽게 공부하세요 /</a> 3 hour low jazz it's really nice but too sad in my opinion</li>
-                    <li><a target="_blank" href="https://www.youtube.com/watch?v=LNv4XyhyP44">Breakcore Mix.exe /</a> it's too high it's qualtly good for dooing somethink repated / UltraKill OST??</li>
+                    <li><a class="link" target="_blank" href="https://www.youtube.com/watch?v=rw392gowFu4">Webinar™  /</a> Really good stuf music for night coding sesion.</li>
+                    <li><a class="link" target="_blank" href="https://www.youtube.com/watch?v=pYSrlygyhi4">Dozing off ... /</a> Good content for music to learn</li>
+                    <li><a class="link" target="_blank" href="https://www.youtube.com/watch?v=FhKh-lj9qtg">이 재생목록으로 쉽게 공부하세요 /</a> 3 hour low jazz</li>
+                    <li><a class="link" target="_blank" href="https://www.youtube.com/watch?v=LNv4XyhyP44">Breakcore Mix.exe /</a></li>
                 </div>
 
             <h3> <button id="toggleButton2">&#9660;</button> Also smoff lovi jazz but now it's Nujables / 🧡 / </h3>
 
             <div  id="slideDiv2">
-                <li><a href="https://www.youtube.com/watch?v=c3fZ8LXNs_E" target="_blank">Nujabes/Fat Jon /</a> The lamp is low but it's all album with others track</li>
-                <li><a target="_blank" href="https://www.youtube.com/watch?v=JabEfERo2Is">Nujabes-Rainymood - Mystline /</a> Really good for learning</li>
-                <li><a target="_blank" href="https://www.youtube.com/watch?v=qjj8UGh35_k">In remembrance of Nujabes /</a> Nujabes</li>
-                <li><a target="_blank" href="https://www.youtube.com/watch?v=LxKHX2fumJw">The Lamp is low 1h/</a> YOU DON'T HAVE ANY ENEMY</li>
-                <li><a target="_blank" href="https://www.youtube.com/watch?v=jG_wYGxwnC4">Hydeout Productions Mix /</a> Nujabes/Uyama Hiroto</li>
-                <li><a target="_blank" href="https://www.youtube.com/watch?v=Y58kN2CmFwA">Pada deszcz w ｋ ｏｔｏ /</a>really low lovi</li>
-                <li><a target="_blank" href="https://www.youtube.com/watch?v=Kb6wvd2vjtM">Nujabes/</a></li>
+                <li><a class="link" href="https://www.youtube.com/watch?v=c3fZ8LXNs_E" target="_blank">Nujabes/Fat Jon /</a> The lamp is low </li>
+                <li><a class="link" target="_blank" href="https://www.youtube.com/watch?v=JabEfERo2Is">Nujabes-Rainymood - Mystline /</a> Really good for learning</li>
+                <li><a class="link" target="_blank" href="https://www.youtube.com/watch?v=qjj8UGh35_k">In remembrance of Nujabes /</a> Nujabes</li>
+                <li><a class="link" target="_blank" href="https://www.youtube.com/watch?v=LxKHX2fumJw">The Lamp is low 1h/</a> YOU DON'T HAVE ANY ENEMY</li>
+                <li><a class="link" target="_blank" href="https://www.youtube.com/watch?v=jG_wYGxwnC4">Hydeout Productions Mix /</a> Nujabes/Uyama Hiroto</li>
+                <li><a class="link" target="_blank" href="https://www.youtube.com/watch?v=Y58kN2CmFwA">Pada deszcz w ｋ ｏｔｏ /</a>really low lovi</li>
+                <li><a class="link" target="_blank" href="https://www.youtube.com/watch?v=Kb6wvd2vjtM">Nujabes/</a></li>
             </div>
 
             <h3> <button id="toggleButton3">&#9660;</button> Backrooms vibe / another good stuf, content to music in background / 🆒 / </h3>
@@ -57,29 +64,29 @@
 
             <h3> <button id="toggleButton4">&#9660;</button> HOLY GLORY !!! / </h3>
             <div id="slideDiv4">
-                <li><a target="_blank" href="https://www.youtube.com/watch?v=1VYYlaFjQho">/ Holy March of the Templars /</a> Deus Vult | Epic Crusade Music</li>
-                <li><a target="_blank" href="https://www.youtube.com/watch?v=_xaj8QSJZ0E&t=281s">/ 1 Hour of Chad Orthodox Chants to Redeem Your Soul /</a> It's just a giga chad singing</li>
-                <li><a target="_blank" href="https://www.youtube.com/watch?v=whfvit4Of4A">/ Znajdujesz się w ciszy swojego umysłu, samotność jest twoim domem /</a> Stoicki spokój ducha </li>
+                <li><a class="link" target="_blank" href="https://www.youtube.com/watch?v=1VYYlaFjQho">/ Holy March of the Templars /</a> Deus Vult | Epic Crusade Music</li>
+                <li><a class="link" target="_blank" href="https://www.youtube.com/watch?v=_xaj8QSJZ0E&t=281s">/ 1 Hour of Chad /</a> It's just a giga chad singing</li>
+                <li><a class="link" target="_blank" href="https://www.youtube.com/watch?v=whfvit4Of4A">/ Znajdujesz się w ciszy swojego umysłu /</a> Stoicki spokój ducha </li>
             </div>
 
             <h3> <button id="toggleButton6">&#9660;</button> JAMES SCHOLZ / THE GOD / </h3>
             <div id="slideDiv6">
-                <li><a target="_blank" href="https://www.youtube.com/watch?v=TH66dK4Yn4w">/ SUPER REVISION DAY!!! 😳 /</a>James Scholz study 8.5h </li>
-                <li><a target="_blank" href="https://www.youtube.com/watch?v=dXbrcI9_ONc">/ 4-HOUR STUDY WITH ME—late night rain sounds! /</a> James Study 4h </li>
-                <li><a target="_blank" href="https://www.youtube.com/watch?v=uHFMghsYgRI&t"> / Study with me live pomodoro! /</a> James Study 8h</li>
+                <li><a class="link" target="_blank" href="https://www.youtube.com/watch?v=TH66dK4Yn4w">/ SUPER REVISION DAY!!! /</a>James Scholz study 8.5h </li>
+                <li><a class="link" target="_blank" href="https://www.youtube.com/watch?v=dXbrcI9_ONc">/ 4-HOUR STUDY WITH ME—late night rain sounds! /</a> James Study 4h </li>
+                <li><a class="link" target="_blank" href="https://www.youtube.com/watch?v=uHFMghsYgRI&t"> / Study with me live pomodoro! /</a> James Study 8h</li>
             </div>
 
             <h3> <button id="toggleButton5">&#9660;</button> Tools in web / 🔧 / </h3>
 
             <div id="slideDiv5">
                     <!--#################-->
-                    <!--### Web Tools ###-->
+                    <!--### Web Tools ###-->                   
                     <!--#################-->
-                <li id="pomofocus"><a target="_blank" href="https://pomofocus.io/">/ Pomofocus /</a> Timer pomodoro good for learning and time menagment</li>            
-                <li id="matemax"><a target="_blank" href="https://www.matemaks.pl/wzory-trygonometryczne.html">/ Wzory trygonometryczne /</a> Dużo tych wzorów a sam Matemax jest fajny</li>
-                <li id="duolingo"><a target="_blank" href="https://www.duolingo.com/">/ Duolingo /</a> Free learning laungage</li>
-                <li id="chess"><a target="_blank" href="https://www.chess.com/">/ Chess.com /</a> Just play a chess online for free</li>
-                <li id="chat"><a target="_blank" href="https://chat.openai.com/">/ ChatGPT /</a> Open AI u can talk with it, he know almost everythink</li>
+                <li id="pomofocus"><a target="_blank" href="https://pomofocus.io/">Pomofocus /</a> Timer pomodoro good for learning</li>            
+                <li id="matemax"><a target="_blank" href="https://www.matemaks.pl/wzory-trygonometryczne.html"> Wzory trygonometryczne /</a> Matemax jest fajny</li>
+                <li id="duolingo"><a target="_blank" href="https://www.duolingo.com/">Duolingo /</a> Free learning laungage</li>
+                <li id="chess"><a target="_blank" href="https://www.chess.com/">Chess.com /</a> Just play a chess online</li>
+                <li id="chat"><a target="_blank" href="https://chat.openai.com/">ChatGPT /</a> Open AI u can talk with it</li>
             </div>
         </ul>
     </div>
