@@ -66,3 +66,29 @@ a {
     background-color: aquamarine;
     color: black;
 }
+
+#toggleButton , #toggleButton2, #toggleButton3, #toggleButton4, #toggleButton5 ,#toggleButton6 {
+    background-color: black;
+    border: black;
+    color: white;
+}
+
+/* Ukryj początkowo wysuwany div */
+#slideDiv , #slideDiv2 , #slideDiv3, #slideDiv4, #slideDiv5, #slideDiv6 {
+    display: none;
+    width: 60%;
+    height: auto;
+    background-color: black;
+    padding: 10px;
+  }
+  
+  /* Zastosuj przejście (transition) do płynnego animowania zmiany "max-height" */
+  #slideDiv , #slideDiv2 , #slideDiv3, #slideDiv4, #slideDiv5 , #slideDiv6 {
+    transition: max-height 0.5s ease-out;
+  }
+  
+  /* Pokaż wysuwany div po kliknięciu przycisku */
+  #slideDiv.active  , #slideDiv2.active  , #slideDiv3.active , #slideDiv4.active , #slideDiv5.active, #slideDiv6.active {
+    display: block;
+    max-height: 300px; /* Ustaw maksymalną wysokość, aby pokazać element */
+  }
