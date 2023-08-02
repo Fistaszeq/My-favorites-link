@@ -36,70 +36,14 @@ a {
     transition: color 1s ease;
 }
 
-/* #pomofocus {
+#toggleButton ,#buttonmenu1 , #toggleButton2, #toggleButton3, #toggleButton4, #toggleButton5 ,#toggleButton6,#toggleButton7 {
     background-color: black;
-    padding: 1em;
-    border-radius: 1em;
-    transition: background-color 0.5s ease; }   
-#pomofocus:hover {
-    background-color: red;
-}
-#pomofocus a {
-    color: chartreuse;
-} */
-
-/* #matemax {
-    background-color: black;
-    transition: background-color 0.5s ease;     padding: 1em;
-    border-radius: 1em;
-}
-#matemax:hover {
-    background-color: brown;
-} */
-/* Dodaj przejście na właściwość background-color */
-
-/* #duolingo {
-    transition: background-color 0.5s ease;
-    border-radius: 1em;
-    padding: 1em;
-}
-#duolingo:hover {
-    background-color: greenyellow;
-    color: black;
-}
-#duolingo a {
-    color: red;
-} */
-
-/* #chess {
-    transition: background-color 0.5s ease;
-    border-radius: 1em;
-    padding: 1em;
-}
-#chess:hover {
-    background-color: darkgreen;
-}
-#chess a {
-    color: red;
-} */
-
-/* #chat {
-    transition: background-color 0.5s ease;
-    border-radius: 1em;
-    padding: 1em;
-}
-#chat:hover {
-    background-color: aquamarine;
-    color: black;
-} */
-
-#toggleButton ,#buttonmenu1 , #toggleButton2, #toggleButton3, #toggleButton4, #toggleButton5 ,#toggleButton6 {
-    background-color: black;
-    border: black;
+    color: white;
+    border: white;
 }
 
 /* Ukryj początkowo wysuwany div */
-#slideDiv ,#menu1 , #slideDiv2 , #slideDiv3, #slideDiv4, #slideDiv5, #slideDiv6 {
+#slideDiv ,#menu1 , #slideDiv2 , #slideDiv3, #slideDiv4, #slideDiv5, #slideDiv6, #slideDiv7 {
     display: none;
     width: 60%;
     height: auto;
@@ -108,12 +52,12 @@ a {
   }
   
   /* Zastosuj przejście (transition) do płynnego animowania zmiany "max-height" */
-  #slideDiv ,#menu1 ,  #slideDiv2 , #slideDiv3, #slideDiv4, #slideDiv5 , #slideDiv6 {
+  #slideDiv ,#menu1 ,  #slideDiv2 , #slideDiv3, #slideDiv4, #slideDiv5 , #slideDiv6, #slideDiv7 {
     transition: max-height 0.5s ease-out;
   }
   
   /* Pokaż wysuwany div po kliknięciu przycisku */
-  #slideDiv.active , #menu1.active , #slideDiv2.active  , #slideDiv3.active , #slideDiv4.active , #slideDiv5.active, #slideDiv6.active {
+  #slideDiv.active , #menu1.active , #slideDiv2.active  , #slideDiv3.active , #slideDiv4.active , #slideDiv5.active, #slideDiv6.active, #slideDiv7.active {
     display: block;
     max-height: 300px; /* Ustaw maksymalną wysokość, aby pokazać element */
   }
@@ -135,11 +79,18 @@ ul {
 }
 
 #LightBtn {
-    background-color: whitesmoke;
+    background-color: White;
     color: black;
+
 }
 
 #DarkBtn {
     background-color: black;
-    color: white;
+    color: White;
+}
+
+#DarkBtn, #LightBtn {
+    padding: 1em;
+    border-radius: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
